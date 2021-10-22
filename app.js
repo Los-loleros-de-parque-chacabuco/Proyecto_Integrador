@@ -1,38 +1,37 @@
 var totalPago = 0;
 const carrito = [];
-let botonesAdquirirPromo=document.querySelectorAll(".adquririrPromo")
+let iconoCarrito = document.querySelector("#carrito")
+let botonesAdquirirPromo = document.querySelectorAll(".adquririrPromo")
 let botonesBiciCompra = document.querySelectorAll(".biciCompra")
 const articulos = ["Specialized", "Bici2", "Bici3", "Bici4", "Bici5"];
 const promociones = ["PromoBasica", "PromoBiciteka", "PromoPremiun"]
 const valoresPromociones = [75000, 120000, 250000]
 
-botonesBiciCompra.forEach((botonBiciCompra)=>
-botonBiciCompra.onclick = () => {
-totalPago += parseInt(botonBiciCompra.dataset.valor)
-carrito.push(botonBiciCompra)    
-console.log(carrito) 
-}
-);   
-botonesAdquirirPromo.forEach((botonAdquirirPromo)=>
-botonAdquirirPromo.onclick = () => {
-totalPago += parseInt(botonAdquirirPromo.dataset.valor)
-carrito.push(botonAdquirirPromo)    
-console.log(carrito) 
-}
-);   
-//     
+botonesBiciCompra.forEach((botonBiciCompra) =>
+    botonBiciCompra.onclick = () => {
+        totalPago += parseInt(botonBiciCompra.dataset.valor)
+        carrito.push(botonBiciCompra)
+        console.log(carrito)
+    }
+);
+botonesAdquirirPromo.forEach((botonAdquirirPromo) =>
+    botonAdquirirPromo.onclick = () => {
+        totalPago += parseInt(botonAdquirirPromo.dataset.valor)
+        carrito.push(botonAdquirirPromo)
+        console.log(carrito)
+    }
+);
 
-function comparBicicleta() {
-
-}
-var pagar;
-var cuenta1;
-var vuelto;
 function vaciarCarrito() {
     totalPago = 0
     carrito = [];
 }
-function carritoCompra() {
+
+iconoCarrito.onclick = () => {
+    var pagar;
+    var cuenta1;
+    var vuelto;
+
     if (totalPago === 0) {
         alert("compra algo raton")
     } else {
