@@ -23,12 +23,14 @@
 
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg 5navbar2 sticky-top">
+		<div id="progressbar"></div>
+		<div id="scrollPath"></div>
+		<nav class="navbar navbar-expand-lg 5navbar2 sticky-top mynav">
 			<div class="container-fluid">
 				<div>
 					<img src="./images/NewCanvas2.png" width="50px">
 				</div>
-				<a class="navbar-brand" href="#">Navbar</a>
+				<a class="navbar-brand text-decoration-none fuente" href="#">ㅤBiciteka</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"> <img src="./images/menu-outline.svg" alt=""></span>
@@ -36,23 +38,24 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#"
+							<a class="nav-link active fuente" aria-current="page" href="#"
 								style="text-decoration: None">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" style="text-decoration: None">Features</a>
+							<a class="nav-link fuente" href="#" style="text-decoration: None">Features</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" style="text-decoration: None">Pricing</a>
+							<a class="nav-link fuente" href="#" style="text-decoration: None">Pricing</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" style="text-decoration: None">
+							<a class="nav-link fuente" href="#" style="text-decoration: None">
 								<i class="fas fa-shopping-cart" id="carrito"></i></a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
+
 		<div class="overlay"></div>
 		<!-- <div class="absolute">
 			<h1 class="h1 animate__animated animate__pulse animate__delay-2s animate__repeat-2">Biciteka</h1>
@@ -87,14 +90,23 @@
 					<h1 class="titulo" id="Specialized">Specialized</h1>
 					<p class="fecha">Publicado el 4 de Marzo de 2021</p>
 					<p>
-						Cómo no podía ser de otra manera encabeza la lista la prestigiosa marca americana. La firma de la “s” es, indiscutiblemente, y por méritos propios, la mejor marca de bicicletas del mundo. A su favor juega la indudable calidad de todos sus productos y el enorme prestigio del que goza entre los usuarios del mundo ciclista. Los de Morgan Hill llevan años jugando en otra liga y son referentes en absolutamente todas las facetas de mercado. Cuadros de bicicleta, componentes, ropa y complementos. Su cuota de mercado, especialmente en bicicletas de gama media-alta es espectacular y sus ventas por todo el mundo lo atestiguan.
+						Cómo no podía ser de otra manera encabeza la lista la prestigiosa marca americana. La firma de
+						la “s” es, indiscutiblemente, y por méritos propios, la mejor marca de bicicletas del mundo. A
+						su favor juega la indudable calidad de todos sus productos y el enorme prestigio del que goza
+						entre los usuarios del mundo ciclista. Los de Morgan Hill llevan años jugando en otra liga y son
+						referentes en absolutamente todas las facetas de mercado. Cuadros de bicicleta, componentes,
+						ropa y complementos. Su cuota de mercado, especialmente en bicicletas de gama media-alta es
+						espectacular y sus ventas por todo el mundo lo atestiguan.
 					</p>
 				</div>
 				<div class="post">
 					<h1 class="titulo" id="Scott">Scott</h1>
 					<p class="fecha">Publicado el 4 de Marzo de 2021</p>
 					<p>
-						La marca Suiza sigue creciendo y parece dispuesta a seguir el camino de Specialized ampliando su cartera de productos a prácticamente todo el sector ciclista. Scott ya fábrica a día de hoy, además de bicicletas, cascos, zapatillas, gafas y ropa entre otros complementos, consiguiendo así fidelizar gran parte de sus clientes.
+						La marca Suiza sigue creciendo y parece dispuesta a seguir el camino de Specialized ampliando su
+						cartera de productos a prácticamente todo el sector ciclista. Scott ya fábrica a día de hoy,
+						además de bicicletas, cascos, zapatillas, gafas y ropa entre otros complementos, consiguiendo
+						así fidelizar gran parte de sus clientes.
 					</p>
 				</div>
 			</div>
@@ -117,7 +129,8 @@
 							<li>Un bono por $500</li>
 							<li>un abrazo de Malen tranqui no pidas mucho pa</li>
 							<li>Un inflador firmado por Chris con faltas de ortografia</li>
-							<li class="grey"> <button class="button adquirirPromo" data-valor="75000" data-promo="basica">Adquirir</button></li>
+							<li class="grey"> <button class="button adquirirPromo" data-valor="75000"
+									data-promo="basica">Adquirir</button></li>
 						</ul>
 					</div>
 				</div>
@@ -175,7 +188,8 @@
 			<h2 class="titulo wow animate__animated animate__zoomIn">Sector premium</h2>
 		</div>
 		<div class="acomodarTargetas">
-			<div  data-bici="Hartbeespoort" data-valor="35000" class="container col-xs-12 col-sm-6 col-md-4 col-lg-5 col-xl-6 biciCompra">
+			<div data-bici="Hartbeespoort" data-valor="35000"
+				class="container col-xs-12 col-sm-6 col-md-4 col-lg-5 col-xl-6 biciCompra">
 				<div class="card">
 					<div class="card-head">
 						<img src="./images/NewCanvas1.png" alt="logo" class="card-logo">
@@ -232,7 +246,8 @@
 					</div>
 				</div>
 			</div>
-			<div  data-bici="La come montañas" data-valor="65000" class="container col-xs-12 col-sm-6 col-md-4 col-lg-5 col-xl-6 biciCompra">
+			<div data-bici="La come montañas" data-valor="65000"
+				class="container col-xs-12 col-sm-6 col-md-4 col-lg-5 col-xl-6 biciCompra">
 				<div class="card">
 					<div class="card-head">
 						<img src="./images/NewCanvas1.png" alt="logo" class="card-logo">
@@ -289,7 +304,8 @@
 					</div>
 				</div>
 			</div>
-			<div  data-bici="La Niconeta" data-valor="70000" class="container col-xs-12 col-sm-6 col-md-4 col-lg-5 col-xl-6 biciCompra">
+			<div data-bici="La Niconeta" data-valor="70000"
+				class="container col-xs-12 col-sm-6 col-md-4 col-lg-5 col-xl-6 biciCompra">
 				<div class="card">
 					<div class="card-head">
 						<img src="./images/NewCanvas1.png" alt="logo" class="card-logo">

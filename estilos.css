@@ -48,20 +48,34 @@ header {
   top: 0%;
   z-index: 2;
 }
-
 .navbar2 a {
   color: #fff;
   display: inline-block;
   padding: 20px;
   width: 100%;
   color: #000;
-  transition: 0.3s ease-out all;
+  transition: .3s ease-out all;
 }
-
 .navbar2 a:hover {
   background: #343434;
   color: #fff;
   text-decoration: none;
+}
+
+.fuente{
+  font-size: 20px;
+  font: bold;
+  color: black;
+}
+.mynav a:hover{
+  background: rgba(0, 0, 0, 0.377);
+  color:black;
+}
+a.nav-link.active.fuente{
+  color: white;
+}
+a.nav-link.fuente{
+  color: #000;
 }
 
 #blog {
@@ -104,6 +118,59 @@ h1 {
 
 .hover {
   color: #000;
+}
+
+::-webkit-scrollbar
+#scrollPath{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0,05);
+}
+#progressbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to top, #008AFF, #00FFE7);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate
+{
+  0%,100%
+  {
+    filter: hue-rotate(0deg);
+  }
+  50%
+  {
+    filter: hue-rotate(360deg);
+  }
+}
+#progressbar::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008AFF, #00FFE7);
+  filter: blur(30px);
+}
+#progressbar::after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008AFF, #00FFE7);
+  filter: blur(30px);
 }
 
 /* * ============================== */
@@ -385,6 +452,9 @@ align-items: center; */
   border: solid 2px #aeea00;
 }
 
+.biciCompra{
+  cursor:pointer;
+}
 /*PROMO*/
 
 .promo {
