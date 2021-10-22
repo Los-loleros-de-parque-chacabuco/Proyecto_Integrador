@@ -1,2 +1,2 @@
-# Proyecto_Integrador
-era responsive al 90%
+# Tienda_Con_Ultimos_Cambios
+Maquetado 50%
