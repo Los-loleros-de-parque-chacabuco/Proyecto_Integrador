@@ -1,3 +1,9 @@
+/* PALETA DE COLORES
+black
+#a2d40cf5
+#525151 
+white*/
+
 * {
   margin: 0;
   padding: 0;
@@ -124,6 +130,7 @@ h1 {
 
 main {
   min-height: 100vh;
+  padding-bottom: 200px;
 }
 main .contenido p {
   margin-bottom: 20px;
@@ -163,9 +170,33 @@ aside .indice a {
 /* * ============================== */
 /* * ========== FOOTER ============ */
 /* * ============================== */
-footer .navbar {
-  position: sticky;
-  bottom: 0%;
+footer > div {
+  background-color: #000;
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.falacias {
+  background: linear-gradient(
+    to right,
+    rgba(84, 90, 66, 0.116),
+    rgba(110, 98, 98, 0.582)
+  );
+  border-radius: 10px;
+  box-shadow: 5px 10px #343434;
+  flex-wrap: wrap;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 350px;
+}
+
+.color {
+  background-color: #aeea00;
+  color: white;
 }
 /* * ============================== */
 /* * ====== MEDIA QUERIES ========= */
@@ -320,7 +351,7 @@ video {
   height: 500px;
   width: 1200px;
   position: relative;
-  background-color: red;
+  background-color: #a2d40cf5;
   display: flex;
   margin: auto;
   margin-top: 150px;
@@ -439,7 +470,6 @@ align-items: center; */
 /*==========================*/
 .premium {
   height: 250px;
-  margin: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -523,15 +553,15 @@ align-items: center; */
 .card-head {
   position: relative;
   height: 252px;
-  background: #fa782e;
+  background: #aeea00;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #fa782e 8%, #c82930 83%);
+  background: -moz-linear-gradient(-45deg, #aeea00 8%, #525151 83%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #fa782e 8%, #c82930 83%);
+  background: -webkit-linear-gradient(-45deg, #aeea00 8%, #525151 83%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #fa782e 8%, #c82930 83%);
+  background: linear-gradient(135deg, #aeea00 8%, #525151 83%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fa782e', endColorstr='#c82930', GradientType=1);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#aeea00', endColorstr='#525151 ', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
   border-radius: 25px 25px 0 0;
 }
@@ -544,7 +574,7 @@ align-items: center; */
 .product-img {
   position: absolute;
   left: 0;
-  margin-top: -16px;
+  margin-top: 100px;
   margin-left: 50px;
 }
 
@@ -596,7 +626,7 @@ align-items: center; */
   font-size: 10px;
   font-weight: 300;
   color: #fff;
-  background: #11e95b;
+  background: #a2d40cf5;
   padding: 2px 5px;
   border-radius: 4px;
   top: -2px;
@@ -651,7 +681,7 @@ align-items: center; */
 }
 
 .ul-size li a.active {
-  background: #f35e3d;
+  background: #525151;
   color: #fff;
 }
 
@@ -703,7 +733,7 @@ align-items: center; */
   position: absolute;
   content: "";
   display: inline-block;
-  border: 1px solid #f35e3d;
+  border: 1px solid #aeea00;
   width: 24px;
   height: 24px;
   border-radius: 100%;
@@ -713,7 +743,7 @@ align-items: center; */
 
 .product-price {
   position: absolute;
-  background: #11e95b;
+  background: #aeea00;
   padding: 7px 20px;
   text-align: center;
   display: inline-block;
@@ -723,7 +753,7 @@ align-items: center; */
   border-radius: 7px;
   margin-top: -13px;
   margin-left: -5px;
-  box-shadow: -10px 20px 15px -10px rgba(17, 233, 91, 0.3);
+  box-shadow: -10px 20px 15px -10px #525151;
 }
 
 .product-price b {
