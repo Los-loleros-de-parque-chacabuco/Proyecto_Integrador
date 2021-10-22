@@ -1,7 +1,7 @@
 var totalPago = 0;
-const carrito = [];
+let carrito = [];
 let iconoCarrito = document.querySelector("#carrito")
-let botonesAdquirirPromo = document.querySelectorAll(".adquririrPromo")
+let botonesAdquirirPromo = document.querySelectorAll(".adquirirPromo")
 let botonesBiciCompra = document.querySelectorAll(".biciCompra")
 const articulos = ["Specialized", "Bici2", "Bici3", "Bici4", "Bici5"];
 const promociones = ["PromoBasica", "PromoBiciteka", "PromoPremiun"]
@@ -10,14 +10,14 @@ const valoresPromociones = [75000, 120000, 250000]
 botonesBiciCompra.forEach((botonBiciCompra) =>
     botonBiciCompra.onclick = () => {
         totalPago += parseInt(botonBiciCompra.dataset.valor)
-        carrito.push(botonBiciCompra)
+        carrito.push(botonBiciCompra.dataset.bici)
         console.log(carrito)
     }
 );
 botonesAdquirirPromo.forEach((botonAdquirirPromo) =>
     botonAdquirirPromo.onclick = () => {
         totalPago += parseInt(botonAdquirirPromo.dataset.valor)
-        carrito.push(botonAdquirirPromo)
+        carrito.push(botonAdquirirPromo.dataset.promo)
         console.log(carrito)
     }
 );
@@ -36,7 +36,7 @@ iconoCarrito.onclick = () => {
         alert("compra algo raton")
     } else {
         alert("Compraste estos articulos: " + "\n" + carrito + " tenes que pagar $ " + totalPago)
-        pagar = parseInt(prompt("¿Con cuento va pagar ?"))
+        pagar = parseInt(prompt("¿Con cuento va pagar?"))
         if (pagar > totalPago) {
             vuelto = pagar - totalPago;
             alert("Muchas gracias por su compra ;)\n Su vuelto es $ " + vuelto)
