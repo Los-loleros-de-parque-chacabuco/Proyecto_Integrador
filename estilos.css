@@ -48,6 +48,7 @@ header {
   top: 0%;
   z-index: 2;
 }
+
 .navbar2 a {
   color: #fff;
   display: inline-block;
@@ -56,6 +57,7 @@ header {
   color: #000;
   transition: .3s ease-out all;
 }
+
 .navbar2 a:hover {
   background: #343434;
   color: #fff;
@@ -108,6 +110,8 @@ a.nav-link.fuente{
   color: black;
 }
 
+
+
 h1 {
   color: white;
 }
@@ -124,20 +128,21 @@ h1 {
   width: 0;
 }
 #scrollPath{
-  position: fixed;
+  position:absolute;
   top: 0;
   right: 0;
   width: 10px;
   height: 100%;
   background: rgba(255, 255, 255, 0,05);
 }
+
 #progressbar{
   position: fixed;
   top: 0;
   right: 0;
   width: 10px;
   background: linear-gradient(to top, #008AFF, #00FFE7);
-  animation: animate 5s linear infinite;
+  animation: animate 8s linear infinite;
 }
 
 @keyframes animate
@@ -204,10 +209,12 @@ main .contenido p {
   margin-bottom: 20px;
   line-height: 30px;
 }
+
 main .contenido .titulo {
   font-weight: normal;
   padding-top: 40px;
 }
+
 main .contenido .fecha {
   font-size: 14px;
 }
@@ -235,37 +242,7 @@ aside .indice a {
   margin-bottom: 10px;
   color: #3f3f3f;
 }
-/* * ============================== */
-/* * ========== FOOTER ============ */
-/* * ============================== */
-footer > div {
-  background-color: #000;
-  display: flex;
-  padding: 50px;
-  align-items: center;
-  flex-wrap: wrap;
-}
 
-.falacias {
-  background: linear-gradient(
-    to right,
-    rgba(84, 90, 66, 0.116),
-    rgba(110, 98, 98, 0.582)
-  );
-  border-radius: 10px;
-  box-shadow: 5px 10px #343434;
-  flex-wrap: wrap;
-  float: left;
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  width: 350px;
-}
-
-.color {
-  background-color: #aeea00;
-  color: white;
-}
 /* * ============================== */
 /* * ====== MEDIA QUERIES ========= */
 /* * ============================== */
@@ -484,7 +461,9 @@ align-items: center; */
   background-image: url(./images/fondobici2.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100%;
+  height: 100%;
+  color: red;
 }
 
 .animate {
@@ -845,3 +824,70 @@ align-items: center; */
 /*============================*/
 /*====TARJETAS VIEJAS=====*/
 /*========================*/
+
+
+
+/* Despues de las falacias antes del footer */
+
+.falacias {
+  background: linear-gradient(
+    to right,
+    rgba(84, 90, 66, 0.116),
+    rgba(110, 98, 98, 0.582)
+  );
+  border-radius: 10px;
+  box-shadow: 5px 10px #343434;
+  flex-wrap: wrap;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 350px;
+}
+
+/* * ============================== */
+/* * ========== FOOTER ============ */
+/* * ============================== */
+.footer {
+  align-items: center;
+  background-color: tomato;
+  bottom:0;
+  color: white;
+  display: flex;
+  text-align: center;
+}
+
+.color {
+  background-color: #aeea00;
+  color: white;
+}
+
+.footer2{
+  align-items: center;
+background-color: #aeea00;
+text-align: center;
+}
+
+.footer3{
+  margin-right: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.centrar{
+  text-align: center;
+  align-items: center;
+}
+
+.psicion{
+ margin-bottom: 250px;
+margin-inline: 200px;
+}
+
+.lineaSeparadora{
+  color: white;
+}
+
+body{
+  color: #000;
+}
